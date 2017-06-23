@@ -7,16 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		384600A31EFD987C0012160A /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 384600A21EFD987C0012160A /* assets.atlas */; };
+		384600A91EFD9C060012160A /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 384600A81EFD9C060012160A /* Level1.sks */; };
+		384600AB1EFD9EB30012160A /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 384600AA1EFD9EB30012160A /* Level2.sks */; };
+		384600AD1EFDAB210012160A /* LevelMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384600AC1EFDAB210012160A /* LevelMenu.swift */; };
+		384A06421EFC89BA0095A80A /* LevelMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 384A06411EFC89BA0095A80A /* LevelMenu.sks */; };
+		384A06441EFC8A130095A80A /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 384A06431EFC8A130095A80A /* Smoke.sks */; };
+		384A064C1EFC8F9D0095A80A /* Explosion+1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 384A064B1EFC8F9D0095A80A /* Explosion+1.mp3 */; };
 		38DD642D1EFB250500DBA2CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD642C1EFB250500DBA2CC /* AppDelegate.swift */; };
-		38DD642F1EFB250500DBA2CC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38DD642E1EFB250500DBA2CC /* GameScene.sks */; };
 		38DD64311EFB250500DBA2CC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38DD64301EFB250500DBA2CC /* Actions.sks */; };
 		38DD64331EFB250500DBA2CC /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD64321EFB250500DBA2CC /* GameScene.swift */; };
 		38DD64351EFB250500DBA2CC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD64341EFB250500DBA2CC /* GameViewController.swift */; };
 		38DD64381EFB250500DBA2CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38DD64361EFB250500DBA2CC /* Main.storyboard */; };
-		38DD643A1EFB250500DBA2CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38DD64391EFB250500DBA2CC /* Assets.xcassets */; };
 		38DD643D1EFB250500DBA2CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38DD643B1EFB250500DBA2CC /* LaunchScreen.storyboard */; };
 		38DD64481EFB250600DBA2CC /* PeevedPenguinsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD64471EFB250600DBA2CC /* PeevedPenguinsTests.swift */; };
 		38DD64531EFB250600DBA2CC /* PeevedPenguinsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD64521EFB250600DBA2CC /* PeevedPenguinsUITests.swift */; };
+		38DD64611EFB266A00DBA2CC /* Bear.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38DD64601EFB266A00DBA2CC /* Bear.sks */; };
+		38DD64631EFB27F600DBA2CC /* CharacterActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38DD64621EFB27F600DBA2CC /* CharacterActions.sks */; };
+		38DD64651EFB299B00DBA2CC /* Penguin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD64641EFB299B00DBA2CC /* Penguin.swift */; };
+		38DD64671EFB2AA200DBA2CC /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38DD64661EFB2AA200DBA2CC /* MainMenu.sks */; };
+		38DD64691EFB2B4C00DBA2CC /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD64681EFB2B4C00DBA2CC /* MSButtonNode.swift */; };
+		38DD646B1EFB2BE100DBA2CC /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD646A1EFB2BE100DBA2CC /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +48,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		384600A21EFD987C0012160A /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
+		384600A81EFD9C060012160A /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1.sks; sourceTree = "<group>"; };
+		384600AA1EFD9EB30012160A /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
+		384600AC1EFDAB210012160A /* LevelMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelMenu.swift; sourceTree = "<group>"; };
+		384A06411EFC89BA0095A80A /* LevelMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelMenu.sks; sourceTree = "<group>"; };
+		384A06431EFC8A130095A80A /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
+		384A064B1EFC8F9D0095A80A /* Explosion+1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Explosion+1.mp3"; sourceTree = "<group>"; };
 		38DD64291EFB250500DBA2CC /* PeevedPenguins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeevedPenguins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DD642C1EFB250500DBA2CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38DD642E1EFB250500DBA2CC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		38DD64301EFB250500DBA2CC /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		38DD64321EFB250500DBA2CC /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		38DD64341EFB250500DBA2CC /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		38DD64371EFB250500DBA2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		38DD64391EFB250500DBA2CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38DD643C1EFB250500DBA2CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38DD643E1EFB250500DBA2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38DD64431EFB250600DBA2CC /* PeevedPenguinsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeevedPenguinsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +69,12 @@
 		38DD644E1EFB250600DBA2CC /* PeevedPenguinsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeevedPenguinsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38DD64521EFB250600DBA2CC /* PeevedPenguinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeevedPenguinsUITests.swift; sourceTree = "<group>"; };
 		38DD64541EFB250600DBA2CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38DD64601EFB266A00DBA2CC /* Bear.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Bear.sks; path = ../Bear.sks; sourceTree = "<group>"; };
+		38DD64621EFB27F600DBA2CC /* CharacterActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = CharacterActions.sks; path = ../CharacterActions.sks; sourceTree = "<group>"; };
+		38DD64641EFB299B00DBA2CC /* Penguin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Penguin.swift; sourceTree = "<group>"; };
+		38DD64661EFB2AA200DBA2CC /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		38DD64681EFB2B4C00DBA2CC /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSButtonNode.swift; path = ../MSButtonNode.swift; sourceTree = "<group>"; };
+		38DD646A1EFB2BE100DBA2CC /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +125,24 @@
 		38DD642B1EFB250500DBA2CC /* PeevedPenguins */ = {
 			isa = PBXGroup;
 			children = (
-				38DD642C1EFB250500DBA2CC /* AppDelegate.swift */,
-				38DD642E1EFB250500DBA2CC /* GameScene.sks */,
+				38DD64601EFB266A00DBA2CC /* Bear.sks */,
+				38DD64621EFB27F600DBA2CC /* CharacterActions.sks */,
+				38DD64661EFB2AA200DBA2CC /* MainMenu.sks */,
+				384A06411EFC89BA0095A80A /* LevelMenu.sks */,
+				384A06431EFC8A130095A80A /* Smoke.sks */,
+				384600A81EFD9C060012160A /* Level1.sks */,
+				384600AA1EFD9EB30012160A /* Level2.sks */,
 				38DD64301EFB250500DBA2CC /* Actions.sks */,
+				38DD64641EFB299B00DBA2CC /* Penguin.swift */,
+				38DD646A1EFB2BE100DBA2CC /* MainMenu.swift */,
+				384600AC1EFDAB210012160A /* LevelMenu.swift */,
 				38DD64321EFB250500DBA2CC /* GameScene.swift */,
 				38DD64341EFB250500DBA2CC /* GameViewController.swift */,
+				38DD642C1EFB250500DBA2CC /* AppDelegate.swift */,
+				384A064B1EFC8F9D0095A80A /* Explosion+1.mp3 */,
+				38DD64681EFB2B4C00DBA2CC /* MSButtonNode.swift */,
+				384600A21EFD987C0012160A /* assets.atlas */,
 				38DD64361EFB250500DBA2CC /* Main.storyboard */,
-				38DD64391EFB250500DBA2CC /* Assets.xcassets */,
 				38DD643B1EFB250500DBA2CC /* LaunchScreen.storyboard */,
 				38DD643E1EFB250500DBA2CC /* Info.plist */,
 			);
@@ -202,6 +235,7 @@
 				TargetAttributes = {
 					38DD64281EFB250500DBA2CC = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GCVD58YW3D;
 						ProvisioningStyle = Automatic;
 					};
 					38DD64421EFB250600DBA2CC = {
@@ -242,9 +276,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				38DD64381EFB250500DBA2CC /* Main.storyboard in Resources */,
-				38DD642F1EFB250500DBA2CC /* GameScene.sks in Resources */,
-				38DD643A1EFB250500DBA2CC /* Assets.xcassets in Resources */,
+				384600A31EFD987C0012160A /* assets.atlas in Resources */,
+				38DD64611EFB266A00DBA2CC /* Bear.sks in Resources */,
 				38DD643D1EFB250500DBA2CC /* LaunchScreen.storyboard in Resources */,
+				384A06421EFC89BA0095A80A /* LevelMenu.sks in Resources */,
+				38DD64671EFB2AA200DBA2CC /* MainMenu.sks in Resources */,
+				38DD64631EFB27F600DBA2CC /* CharacterActions.sks in Resources */,
+				384600AB1EFD9EB30012160A /* Level2.sks in Resources */,
+				384600A91EFD9C060012160A /* Level1.sks in Resources */,
+				384A064C1EFC8F9D0095A80A /* Explosion+1.mp3 in Resources */,
+				384A06441EFC8A130095A80A /* Smoke.sks in Resources */,
 				38DD64311EFB250500DBA2CC /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384600AD1EFDAB210012160A /* LevelMenu.swift in Sources */,
 				38DD64331EFB250500DBA2CC /* GameScene.swift in Sources */,
+				38DD646B1EFB2BE100DBA2CC /* MainMenu.swift in Sources */,
 				38DD64351EFB250500DBA2CC /* GameViewController.swift in Sources */,
+				38DD64651EFB299B00DBA2CC /* Penguin.swift in Sources */,
 				38DD642D1EFB250500DBA2CC /* AppDelegate.swift in Sources */,
+				38DD64691EFB2B4C00DBA2CC /* MSButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +471,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GCVD58YW3D;
 				INFOPLIST_FILE = PeevedPenguins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AkashNambiar.PeevedPenguins;
@@ -438,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GCVD58YW3D;
 				INFOPLIST_FILE = PeevedPenguins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AkashNambiar.PeevedPenguins;
@@ -519,6 +566,7 @@
 				38DD64591EFB250600DBA2CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38DD645A1EFB250600DBA2CC /* Build configuration list for PBXNativeTarget "PeevedPenguinsTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +575,7 @@
 				38DD645C1EFB250600DBA2CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38DD645D1EFB250600DBA2CC /* Build configuration list for PBXNativeTarget "PeevedPenguinsUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +584,7 @@
 				38DD645F1EFB250600DBA2CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
