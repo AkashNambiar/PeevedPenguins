@@ -38,14 +38,15 @@ class MainMenu: SKScene {
         skView.presentScene(scene)
     }
     
-    func loadLevels() {
-        guard let skView = self.view as SKView! else {
+    func loadLevels() -> GameScene? {
+        
+        guard (self.view as SKView!) != nil else {
             print("Could not get Skview")
-            return
+            return nil
         }
 
         guard let scene = GameScene(fileNamed: "LevelMenu") else {
-//            return nil
+            return nil
         }
         scene.scaleMode = .aspectFit
         return scene

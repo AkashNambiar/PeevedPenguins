@@ -37,7 +37,7 @@ class LevelMenu: SKScene {
         scene.scaleMode = .aspectFit
     
         /* 4) Start game scene */
-        skView.presentScene(scene)
+        SKView.presentScene(scene)
         
     }
     
