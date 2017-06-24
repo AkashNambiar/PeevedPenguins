@@ -22,6 +22,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var penguinJoint: SKPhysicsJointPin?
     var sealsKilled: SKLabelNode!
     var penguinsLaunched: SKLabelNode!
+    var backLevel: MSButtonNode!
+//    var currentLevel =
     var numLaunched = 0
     var numDeath = 0
     
@@ -40,12 +42,28 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         cameraNode = childNode(withName: "cameraNode") as! SKCameraNode
         self.camera = cameraNode
         
+        backLevel = childNode(withName: "//backLevel") as! MSButtonNode
+        backLevel.selectedHandler = {
+            guard let skView = self.view as SKView! else{
+                print("Could not get Skview")
+                return
+            }
+            
+            guard let scene = GameScene(fileNamed: "LevelMenu") else {
+                return
+            }
+            scene.scaleMode = .aspectFit
+            
+            skView.presentScene(scene)
+        }
+        
         buttonRestart = childNode(withName: "//buttonRestart") as! MSButtonNode
         buttonRestart.selectedHandler = {
-            guard let scene = GameScene.level(1) else {
+            guard let scene = GameScene.level(1/*LevelMenu.getLevel()*/) else {
                 print("Level 1 is missing?")
                 return
             }
+            
             
             scene.scaleMode = .aspectFit
             view.presentScene(scene)
@@ -55,7 +73,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             self.numDeath = 0
             self.sealsKilled.text = "Seals Killed \(self.numDeath)/5"
-
+            
         }
         
         physicsWorld.contactDelegate = self
@@ -64,7 +82,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func setupCatapult() {
-//        catapultArm.physicsBody?.usesPreciseCollisionDetection = true
+        //        catapultArm.physicsBody?.usesPreciseCollisionDetection = true
         
         var pinLocation = catapult.position
         pinLocation.x += -10
@@ -102,13 +120,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         /* Called when a touch begins */
         
         if(cameraTarget != catapultArm){
-//            catapultArm.physicsBody?.collisionBitMask = 1
-//            resetCamera()
+            //            catapultArm.physicsBody?.collisionBitMask = 1
+            //            resetCamera()
             cameraTarget = catapultArm
             
             return
         }
-
+        
         let touch = touches.first!              // Get the first touch
         let location = touch.location(in: self) // Find the location of that touch in this view
         let nodeAtPoint = atPoint(location)     // Find the node at that location
@@ -130,7 +148,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         numLaunched += 1
         penguinsLaunched.text = "Penguins Launched: \(numLaunched)"
         
-       
+        
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -162,9 +180,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         penguin.physicsBody?.applyForce(d)
         penguin.physicsBody?.affectedByGravity = true
         
-//        catapultArm.physicsBody?.collisionBitMask = 0
+        //        catapultArm.physicsBody?.collisionBitMask = 0
         
-        }
+    }
     
     /* Make a Class method to load levels */
     class func level(_ levelNumber: Int) -> GameScene? {
@@ -210,7 +228,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         numDeath += 1
         sealsKilled.text = "Seals Killed \(numDeath)/5"
     }
-   
+    
     func resetCamera() {
         /* Reset camera */
         let cameraReset = SKAction.move(to: CGPoint(x:0, y:camera!.position.y), duration: 1.5)
@@ -241,13 +259,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    
+    
     override func update(_ currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
         checkPenguin()
         moveCamera()
-
+        
     }
-
+    
 }
 extension CGVector {
     public func length() -> CGFloat{

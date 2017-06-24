@@ -38,18 +38,19 @@ class MainMenu: SKScene {
         skView.presentScene(scene)
     }
     
-    func loadLevels() -> GameScene? {
+    func loadLevels() {
         
-        guard (self.view as SKView!) != nil else {
+        guard let skView = self.view as SKView! else{
             print("Could not get Skview")
-            return nil
+            return
         }
 
         guard let scene = GameScene(fileNamed: "LevelMenu") else {
-            return nil
+            return
         }
         scene.scaleMode = .aspectFit
-        return scene
+        
+        skView.presentScene(scene)
     }
     
     override func didMove(to view: SKView) {
@@ -59,7 +60,7 @@ class MainMenu: SKScene {
         playButton = self.childNode(withName: "playButton") as! MSButtonNode
         
         playButton.selectedHandler = {
-//            self.loadGame()
+//           self.loadGame()
             self.loadLevels()
         }
         
