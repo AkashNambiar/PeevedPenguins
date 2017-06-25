@@ -23,7 +23,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var sealsKilled: SKLabelNode!
     var penguinsLaunched: SKLabelNode!
     var backLevel: MSButtonNode!
-//    var currentLevel =
+    var currentLevel = 1
     var numLaunched = 0
     var numDeath = 0
     
@@ -59,7 +59,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         buttonRestart = childNode(withName: "//buttonRestart") as! MSButtonNode
         buttonRestart.selectedHandler = {
-            guard let scene = GameScene.level(1/*LevelMenu.getLevel()*/) else {
+            guard let scene = GameScene.level(LevelMenu.level) else {
                 print("Level 1 is missing?")
                 return
             }
@@ -82,7 +82,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func setupCatapult() {
-        //        catapultArm.physicsBody?.usesPreciseCollisionDetection = true
+        catapultArm.physicsBody?.usesPreciseCollisionDetection = true
         
         var pinLocation = catapult.position
         pinLocation.x += -10
@@ -122,6 +122,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if(cameraTarget != catapultArm){
             //            catapultArm.physicsBody?.collisionBitMask = 1
             //            resetCamera()
+            moveCamera()
             cameraTarget = catapultArm
             
             return
@@ -259,7 +260,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
-    
+    func e() {
+       
+    }
     
     override func update(_ currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
@@ -269,6 +272,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
 }
+
 extension CGVector {
     public func length() -> CGFloat{
         return ((sqrt(dx*dx) + (dy*dy)))

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		384600A31EFD987C0012160A /* assets.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 384600A21EFD987C0012160A /* assets.atlas */; };
 		384600A91EFD9C060012160A /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 384600A81EFD9C060012160A /* Level1.sks */; };
-		384600AB1EFD9EB30012160A /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 384600AA1EFD9EB30012160A /* Level2.sks */; };
 		384600AD1EFDAB210012160A /* LevelMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384600AC1EFDAB210012160A /* LevelMenu.swift */; };
 		384A06421EFC89BA0095A80A /* LevelMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 384A06411EFC89BA0095A80A /* LevelMenu.sks */; };
 		384A06441EFC8A130095A80A /* Smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 384A06431EFC8A130095A80A /* Smoke.sks */; };
@@ -28,6 +27,7 @@
 		38DD64671EFB2AA200DBA2CC /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38DD64661EFB2AA200DBA2CC /* MainMenu.sks */; };
 		38DD64691EFB2B4C00DBA2CC /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD64681EFB2B4C00DBA2CC /* MSButtonNode.swift */; };
 		38DD646B1EFB2BE100DBA2CC /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD646A1EFB2BE100DBA2CC /* MainMenu.swift */; };
+		38E706C41F0068DD00B73289 /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 38E706C31F0068DD00B73289 /* Level2.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,6 @@
 /* Begin PBXFileReference section */
 		384600A21EFD987C0012160A /* assets.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = assets.atlas; sourceTree = "<group>"; };
 		384600A81EFD9C060012160A /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1.sks; sourceTree = "<group>"; };
-		384600AA1EFD9EB30012160A /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
 		384600AC1EFDAB210012160A /* LevelMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelMenu.swift; sourceTree = "<group>"; };
 		384A06411EFC89BA0095A80A /* LevelMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelMenu.sks; sourceTree = "<group>"; };
 		384A06431EFC8A130095A80A /* Smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Smoke.sks; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		38DD64661EFB2AA200DBA2CC /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
 		38DD64681EFB2B4C00DBA2CC /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSButtonNode.swift; path = ../MSButtonNode.swift; sourceTree = "<group>"; };
 		38DD646A1EFB2BE100DBA2CC /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		38E706C31F0068DD00B73289 /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 				384A06411EFC89BA0095A80A /* LevelMenu.sks */,
 				384A06431EFC8A130095A80A /* Smoke.sks */,
 				384600A81EFD9C060012160A /* Level1.sks */,
-				384600AA1EFD9EB30012160A /* Level2.sks */,
+				38E706C31F0068DD00B73289 /* Level2.sks */,
 				38DD64301EFB250500DBA2CC /* Actions.sks */,
 				38DD64641EFB299B00DBA2CC /* Penguin.swift */,
 				38DD646A1EFB2BE100DBA2CC /* MainMenu.swift */,
@@ -139,8 +139,8 @@
 				38DD64321EFB250500DBA2CC /* GameScene.swift */,
 				38DD64341EFB250500DBA2CC /* GameViewController.swift */,
 				38DD642C1EFB250500DBA2CC /* AppDelegate.swift */,
-				384A064B1EFC8F9D0095A80A /* Explosion+1.mp3 */,
 				38DD64681EFB2B4C00DBA2CC /* MSButtonNode.swift */,
+				384A064B1EFC8F9D0095A80A /* Explosion+1.mp3 */,
 				384600A21EFD987C0012160A /* assets.atlas */,
 				38DD64361EFB250500DBA2CC /* Main.storyboard */,
 				38DD643B1EFB250500DBA2CC /* LaunchScreen.storyboard */,
@@ -282,7 +282,7 @@
 				384A06421EFC89BA0095A80A /* LevelMenu.sks in Resources */,
 				38DD64671EFB2AA200DBA2CC /* MainMenu.sks in Resources */,
 				38DD64631EFB27F600DBA2CC /* CharacterActions.sks in Resources */,
-				384600AB1EFD9EB30012160A /* Level2.sks in Resources */,
+				38E706C41F0068DD00B73289 /* Level2.sks in Resources */,
 				384600A91EFD9C060012160A /* Level1.sks in Resources */,
 				384A064C1EFC8F9D0095A80A /* Explosion+1.mp3 in Resources */,
 				384A06441EFC8A130095A80A /* Smoke.sks in Resources */,
